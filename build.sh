@@ -3,19 +3,18 @@ export JEKYLL_CONFIG="_config.yml,_config-dev.yml"
 export JEKYLL_HOST="0.0.0.0"
 export GEM_GREP="jekyll-feed"
 
-if ! bundle list | grep -q "$GEM_GREP"; then
-  rm Gemfile.lock && \
-  bundle install
-fi
-
-while getopts "ph:" arg; do
+while getopts "h:ip" arg; do
   case $arg in
+    h)
+      export JEKYLL_HOST=${OPTARG}
+      ;;
+    i)
+      rm Gemfile.lock && \
+      bundle install
+      ;;
     p)
       export JEKYLL_ENV="production"
       export JEKYLL_CONFIG="_config.yml"
-      ;;
-    h)
-      export JEKYLL_HOST=${OPTARG}
       ;;
   esac
 done

@@ -4,16 +4,16 @@ topmenu:
 - title: Home
   url: ""
 
+- title: Posts
+  url: "posts/"
+
 - title: About
   url: "about/"
 
-- title: Contact
+- title: Say hello
   url: "contact/"
-
-- title: Get this theme  
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
   class: "ml-2 btn btn-dark text-white px-3"
-  external: true
+  # external: true
 
 # Footer Menu
 footermenu:
@@ -28,5 +28,5 @@ footermenu:
   url: "contact/"
 
 - title: Download
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
+  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
   external: true
