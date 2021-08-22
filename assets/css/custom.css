@@ -1,6 +1,26 @@
-/* 
-Don't want to use sass and simply modify the stylesheet in the old css fashion? 
+/*
+Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
-body {}
+body {
+  padding-top: 0;
+}
+
+main.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero {
+  background: #FF2E63;
+  padding-bottom: 0;
+}
+
+.start-header {
+  padding: 0.5em 0;
+}
+
+#nav-logo {
+  max-height: 36px;
+}
